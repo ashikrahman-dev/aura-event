@@ -1,0 +1,214 @@
+/* Fonts */
+
+.fs-200 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.fs-300 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fs-400 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fs-500 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fs-600 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.fs-700 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fs-800 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.fs-900 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Monrope font */
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+/* Monrope font */
+
+/* Fonts */
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background: var(--dark-1);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --dark-1: #000000;
+    --dark-2: #121212;
+    --dark-3: #191919;
+    --dark-4: #666666;
+    --dark-5: #4C4C4C;
+    --dark-6: #cccccc;
+    --primary: #FAFF00;
+    --white: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+/* reset, root - END */
+
+/* ==== Header Area ====*/
+.header-area {
+    padding: 14px 0;
+    .navbar {
+        ul.navbar-nav {
+            display: flex;
+            gap: 40px;
+            .nav-item {
+                a.nav-link {
+                    color: var(--dark-6);
+                    text-transform: uppercase;
+                    font-size: 14;
+                    font-weight: 500;
+                    line-height: 1.71;
+                    padding: 0;
+                    transition: all 180ms linear;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 0px;
+                        height: 1px;
+                        left: 0;
+                        bottom: 0;
+                        background: var(--primary);
+                        transition: all 180ms linear;
+                    }
+                    
+                    &:hover {
+                        color: var(--primary);
+                        &::after {
+                            width: 33px;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-cta-btn {
+            margin-left: 100px;
+            button {
+                background: var(--white);
+                border: none;
+                padding: 6px 20px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.7px;
+                color: var(--dark-1);
+
+            }
+        }
+    }
+}
+/* ==== Header Area ====*/
+
+
+/* ==== Hero Area ====*/
+.hero-area {
+    background: url('../img/banner-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0 80px 0;
+
+    .hero-area-content {
+        max-width: 833px;
+        margin: 0 auto;
+        h1 {
+            color: var(--white);
+            font-size: 46px;
+            font-weight: 300;
+            line-height: 1.21;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.55;
+            font-family: "Manrope", sans-serif;
+            font-weight: 400;
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//Common yellow color button
+.common-yellow-btn {
+    padding: 15px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    background: var(--primary);
+    transition: all 180ms linear;
+    color: var(--dark-1);
+
+    &:hover {
+        background: var(--white);
+    }
+}
+//Common yellow color button
+
+/* ==== Hero Area ====*/
