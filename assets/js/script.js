@@ -1,83 +1,80 @@
-initMultiStepForm();
+const prevBtns = document.querySelectorAll(".btn-prev");
+const nextBtns = document.querySelectorAll(".btn-next");
+const progress = document.getElementById("progress");
+const formSteps = document.querySelectorAll(".form-step");
+const progressSteps = document.querySelectorAll(".progress-step");
+// const addExperienceBtn = document.querySelector(".add-exp-btn");
+// const experiencesGroup = document.querySelector(".experiences-group");
+const btnComplete = document.querySelector(".btn-complete");
+btnComplete.addEventListener("click", () => {
+    document.getElementsByTagName('form').submit
+})
+let formStepsNum = 0;
+let experienceNum = 1;
 
-function initMultiStepForm() {
-    const progressNumber = document.querySelectorAll(".step").length;
-    const slidePage = document.querySelector(".slide-page");
-    const submitBtn = document.querySelector(".submit");
-    const progressText = document.querySelectorAll(".step p");
-    const progressCheck = document.querySelectorAll(".step .check");
-    const bullet = document.querySelectorAll(".step .bullet");
-    const pages = document.querySelectorAll(".page");
-    const nextButtons = document.querySelectorAll(".next");
-    const prevButtons = document.querySelectorAll(".prev");
-    const stepsNumber = pages.length;
+// addExperienceBtn.addEventListener("click", () => {
+//     experienceNum++;
+//     let text = `
+//         <hr>
+//     <div class='experience-item'>
+//         <div class='input-group' >
+//         <label for='title'>Company name</label>
+//         <input type='text' name='title[]' id='title'>
+//     </div>
+//     <div class='input-group'>
+//         <label for='start-date'>Start date</label>
+//         <input type='date' name='start-date[]' id='start-date'>
+//     </div>
+//     <div class='input-group'>
+//         <label for='end-date'>End date</label>
+//         <input type='date' name='nd-date[]' id='end-date'>
+//     </div>
+//     <div class='input-group'>
+//         <label for='job-description'>Description</label>
+//         <textarea name='job-description[]' id='job-description' cols='42' rows='6'></textarea>
+//     </div>
+// </div > `
+//     experiencesGroup.insertAdjacentHTML('beforeend', text);
+// })
 
-    if (progressNumber !== stepsNumber) {
-        console.warn(
-            "Error, number of steps in progress bar do not match number of pages"
-        );
-    }
+function updateFormSteps() {
 
-    document.documentElement.style.setProperty("--stepNumber", stepsNumber);
-
-    let current = 1;
-
-    for (let i = 0; i < nextButtons.length; i++) {
-        nextButtons[i].addEventListener("click", function (event) {
-            event.preventDefault();
-
-            inputsValid = validateInputs(this);
-            // inputsValid = true;
-
-            if (inputsValid) {
-                slidePage.style.marginLeft = `-${
-                    (100 / stepsNumber) * current
-                }%`;
-                bullet[current - 1].classList.add("active");
-                progressCheck[current - 1].classList.add("active");
-                progressText[current - 1].classList.add("active");
-                current += 1;
-            }
-        });
-    }
-
-    for (let i = 0; i < prevButtons.length; i++) {
-        prevButtons[i].addEventListener("click", function (event) {
-            event.preventDefault();
-            slidePage.style.marginLeft = `-${
-                (100 / stepsNumber) * (current - 2)
-            }%`;
-            bullet[current - 2].classList.remove("active");
-            progressCheck[current - 2].classList.remove("active");
-            progressText[current - 2].classList.remove("active");
-            current -= 1;
-        });
-    }
-    submitBtn.addEventListener("click", function () {
-        bullet[current - 1].classList.add("active");
-        progressCheck[current - 1].classList.add("active");
-        progressText[current - 1].classList.add("active");
-        current += 1;
-        setTimeout(function () {
-            alert("Your Form Successfully Signed up");
-            location.reload();
-        }, 800);
-    });
-
-    function validateInputs(ths) {
-        let inputsValid = true;
-
-        const inputs =
-            ths.parentElement.parentElement.querySelectorAll("input");
-        for (let i = 0; i < inputs.length; i++) {
-            const valid = inputs[i].checkValidity();
-            if (!valid) {
-                inputsValid = false;
-                inputs[i].classList.add("invalid-input");
-            } else {
-                inputs[i].classList.remove("invalid-input");
-            }
-        }
-        return inputsValid;
-    }
+    formSteps.forEach(formStep => {
+        formStep.classList.contains("active") &&
+            formStep.classList.remove("active");
+    })
+    formSteps[formStepsNum].classList.add("active");
 }
+
+function updateProgressBar() {
+    progressSteps.forEach((progressStep, idx) => {
+        if (idx < formStepsNum + 1) {
+            progressStep.classList.add("active");
+        } else {
+            progressStep.classList.remove("active");
+        }
+    })
+
+    const progressActive = document.querySelectorAll(".progress-step.active");
+    progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + '%';
+}
+
+
+nextBtns.forEach(common_btn => {
+    common_btn.addEventListener("click", function () {
+        formStepsNum++;
+        updateFormSteps();
+        updateProgressBar();
+        console.log("kk")
+    })
+})
+
+
+prevBtns.forEach(common_btn => {
+    common_btn.addEventListener("click", function () {
+        formStepsNum--;
+        updateFormSteps();
+        updateProgressBar();
+        console.log("kk")
+    })
+})
