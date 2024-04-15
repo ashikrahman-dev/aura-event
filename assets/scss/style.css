@@ -48,7 +48,7 @@
 }
 
 /* Monrope font */
-.manrope {
+.ff-manrope {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
@@ -220,4 +220,59 @@ a {
   text-align: center;
 }
 
-/* ==== Hero Area ====*//*# sourceMappingURL=style.css.map */
+/* ==== Hero Area ====*/
+/* ==== Footer Area ====*/
+.footer-area {
+  padding: 80px 0 28px 0;
+  background: url("../img/footer-background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-area .footer-heading {
+  font-size: 24px;
+  line-height: 1.41;
+  color: var(--white);
+  margin-bottom: 60px;
+}
+.footer-area .footer-features-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 88px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.footer-area .footer-features-wrap .feature-item {
+  max-width: 210px;
+  margin: 0 auto;
+  padding-bottom: 66px;
+  position: relative;
+}
+.footer-area .footer-features-wrap .feature-item::after {
+  position: absolute;
+  content: "";
+  left: -80px;
+  bottom: 0;
+  width: 400%;
+  height: 1px;
+  background-color: var(--white);
+}
+.footer-area .footer-features-wrap .feature-item .feature-icon {
+  margin-bottom: 30px;
+}
+.footer-area .footer-features-wrap .feature-item .feature-name {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 10px;
+}
+.footer-area .footer-features-wrap .feature-item .feature-description {
+  font-size: 14px;
+  line-height: 1.71;
+  min-height: 48px;
+}
+.footer-area .copyright-text {
+  font-size: 16px;
+  line-height: 1.62;
+  margin-top: 80px;
+}
+
+/* ==== Footer Area ====*//*# sourceMappingURL=style.css.map */
