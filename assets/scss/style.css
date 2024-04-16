@@ -312,7 +312,8 @@ a {
 /* ==== Multi Step Form Area ====*/
 .multi-step-form-area {
   padding: 120px 0;
-  background: url("../img/form-section-bg.svg");
+  background: url("../img/form-section-bg.png");
+  background-size: cover;
 }
 .multi-step-form-area .section-title h3 {
   font-size: 36px;
@@ -343,6 +344,23 @@ a {
   line-height: 1.71;
   color: var(--dark-6);
 }
+.multi-step-form-area .file_upload_label {
+  cursor: pointer;
+  padding: 38px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 112px;
+  border: 1px dashed var(--dark-4);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+}
+.multi-step-form-area .file_upload_label input {
+  display: none;
+}
 
 label {
   display: block;
@@ -365,6 +383,7 @@ input {
 .form {
   margin: 0 auto;
   z-index: 1;
+  position: relative;
 }
 
 .input-group {
@@ -388,7 +407,7 @@ input {
 .btn-group {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 96px;
 }
 
 .common_btn {
@@ -454,6 +473,13 @@ textarea {
 
 /* End Prefixes */
 /* Progress bar */
+.progress-bar-wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 40px;
+}
+
 .progress-bar {
   position: relative;
   display: flex;
@@ -551,15 +577,28 @@ textarea {
   margin-bottom: 20px;
 }
 
+.first-step-checkbox-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.last-step-checkbox-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.last-step-checkbox-wrapper .checkbox-wrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+.last-step-checkbox-wrapper .checkbox-wrapper .checkbox-tile .checkbox-label {
+  max-width: 140px;
+}
+
 .checkbox-wrapper {
   display: inline-flex;
   flex-grow: 1;
   position: relative;
-}
-
-.first-step-checkbox-wrapper {
-  display: flex;
-  gap: 30px;
 }
 
 .checkbox-input {
@@ -569,7 +608,7 @@ textarea {
 }
 .checkbox-input:checked + .checkbox-tile {
   border-color: var(--primary);
-  color: #2260ff;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.05);
 }
 

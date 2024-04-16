@@ -253,14 +253,15 @@
                     <!-- Form step - End -->
                     <!-- Form step - Start -->
                     <div class="form-step ">
-                        
                         <!-- Form Header area -->
                         <div class="form-header-area text-center">
                             <h5 class="text-white fw-bold">
                                 Mehrfache Auswahl Frage
                             </h5>
                             <p>
-                                Mit einem Mehrfach Auswahlfeld haben deine Besucher die Möglichkeit eines oder mehrere Felder auszuwählen. Die maximale Anzahl an Antworten kannst du begrenzen und den Besucher anschließend auf die nächste Fragen weiterleiten.
+                                Mit einem Mehrfach Auswahlfeld haben deine Besucher die Möglichkeit eines oder mehrere
+                                Felder auszuwählen. Die maximale Anzahl an Antworten kannst du begrenzen und den
+                                Besucher anschließend auf die nächste Fragen weiterleiten.
                             </p>
                         </div>
                         <!-- Form Header area -->
@@ -337,43 +338,119 @@
                     <!-- Form step - End -->
                     <!-- Form step - start -->
                     <div class="form-step ">
-                        <h3>Social Links</h3>
-                        <div class="input-group">
-                            <label for="linkedin">LinkedIn</label>
-                            <div class="input-box">
-                                <span class="prefix">linkedin.com/in/</span>
-                                <input id="linkedin" name="linkedin" type="text" placeholder="USER123" />
-                            </div>
+                        <!-- Form Header area -->
+                        <div class="form-header-area text-center">
+                            <h5 class="text-white fw-bold">
+                                Dateiupload Frage
+                            </h5>
+                            <p>
+                                Mit dem Dateiupload-Element gibst du deinen Besuchern die Möglichkeit, eine oder mehrere
+                                Dateien innerhalb deiner Formularstruktur hochzuladen, du kannst dabei die maximale
+                                Dateigröße sowie die Anzahl der Dateien begrenzen.
+                            </p>
                         </div>
-                        <div class="input-group">
-                            <label for="twitter">Twitter</label>
-                            <div class="input-box">
-                                <span class="prefix">twitter.com/</span>
-                                <input id="twitter" name="twitter" type="text" placeholder="USER123" />
-                            </div>
+                        <!-- Form Header area -->
+                        <div class="row g-3 address-field-frage">
+                            <label class="file_upload_label" for="filelabel_upload">
+                                <img src="assets/img/cloud-upload-alt.svg" alt="Upload" class="img-fluid">
+                                <span class="title">
+                                    Hier Dateien ablegen
+                                </span>
+                                <input class="FileUpload1" id="filelabel_upload" name="booking_attachment"
+                                    type="file" />
+                            </label>
                         </div>
-                        <div class="input-group">
-                            <label for="github">Github</label>
-                            <div class="input-box">
-                                <span class="prefix">github.com/</span>
-                                <input id="github" name="facebook" type="text" placeholder="USER123" />
+                        <!-- <div class="btn-group">
+                            <a class="common_btn btn-prev">Previous</a>
+                            <input type="submit" value="Complete" name="complete" class="btn btn-complete">
+                        </div> -->
+
+                        <div class="btn-group">
+                            <a class="common_btn btn-prev">Previous</a>
+                            <a class="common_btn btn-next">Next</a>
+                        </div>
+                    </div>
+                    <!-- Form step - End -->
+                    <!-- Form step - start -->
+                    <div class="form-step">
+                        <!-- Form Header area -->
+                        <div class="form-header-area text-center">
+                            <h5 class="text-white fw-bold">
+                                Textfeld Frage
+                            </h5>
+                            <p>
+                                Um direkt am Anfang des Formulars den Besucher zum Beispiel nach seinem Namen zu fragen verwende ein Textfeld. Neben Kontaktdaten kann es auch manchmal hilfreich sein Texteingaben innerhalb des Formulars zu erfassen.
+                            </p>
+                        </div>
+                        <!-- Form Header area -->
+                        <div class="row g-3 address-field-frage">
+                            <div class="col-md-12">
+                                <label for="inputQuestion4" class="form-label">question</label>
+                                <input type="text" class="form-control" id="inputQuestion4" placeholder="enter your question">
                             </div>
                         </div>
                         <div class="btn-group">
                             <a class="common_btn btn-prev">Previous</a>
-                            <input type="submit" value="Complete" name="complete" class="btn btn-complete">
+                            <a class="common_btn btn-next">Next</a>
+                        </div>
+                    </div>
+                    <!-- Form step - End -->
+                    <!-- Form step - start -->
+                    <div class="form-step">
+                        <!-- Form Header area -->
+                        <div class="form-header-area text-center">
+                            <h5 class="text-white fw-bold">
+                                Interested in funnel forms?
+                            </h5>
+                            <p>
+                                Choose now what happens next for you after the live demo!
+
+                            </p>
+                        </div>
+                        <!-- Form Header area -->
+                        <!-- Form first step checkbox -->
+                        <div class="last-step-checkbox-wrapper">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input" />
+                                <span class="checkbox-tile">
+                                    <span class="checkbox-icon">
+                                        <img src="assets/img/form-last-step-select-icon-1.svg" alt="Icon"
+                                            class="img-fluid">
+                                    </span>
+                                    <span class="checkbox-label text-white fw-bold">Tolles Produkt! Ich möchte mehr erfahren!</span>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input" />
+                                <span class="checkbox-tile">
+                                    <span class="checkbox-icon">
+                                        <img src="assets/img/form-last-step-select-icon-2.svg" alt="Icon"
+                                            class="img-fluid">
+                                    </span>
+                                    <span class="checkbox-label text-white fw-bold">Ich möchte einen kostenfreien Präsentationstermin!</span>
+                                </span>
+                            </label>
+                        </div>
+                        <!-- Form first step checkbox -->
+                        <div class="btn-group">
+                            <a class="common_btn btn-prev">Zurück</a>
+                            <a class="common_btn btn-next">Weiter</a>
                         </div>
                     </div>
                     <!-- Form step - End -->
 
                     <!-- Progress Bar -->
-                    <div class="progress-bar mt-5 ">
-                        <div class="progress" id="progress"></div>
-                        <div class="progress-step active" data-title="Personal"></div>
-                        <div class="progress-step" data-title="Contact "></div>
-                        <div class="progress-step" data-title="Experiences"></div>
-                        <div class="progress-step" data-title="Links"></div>
-                        <div class="progress-step" data-title="Links"></div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar mt-5 ">
+                            <div class="progress" id="progress"></div>
+                            <div class="progress-step active" data-title="Personal"></div>
+                            <div class="progress-step" data-title="Contact "></div>
+                            <div class="progress-step" data-title="Experiences"></div>
+                            <div class="progress-step" data-title="Links"></div>
+                            <div class="progress-step" data-title="Links"></div>
+                            <div class="progress-step" data-title="Dateiupload Frage"></div>
+                        </div>
                     </div>
                     <!-- Progress Bar -->
                 </form>

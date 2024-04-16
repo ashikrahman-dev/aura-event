@@ -5,10 +5,10 @@ const formSteps = document.querySelectorAll(".form-step");
 const progressSteps = document.querySelectorAll(".progress-step");
 // const addExperienceBtn = document.querySelector(".add-exp-btn");
 // const experiencesGroup = document.querySelector(".experiences-group");
-const btnComplete = document.querySelector(".btn-complete");
-btnComplete.addEventListener("click", () => {
-    document.getElementsByTagName('form').submit
-})
+// const btnComplete = document.querySelector(".btn-complete");
+// btnComplete.addEventListener("click", () => {
+//     document.getElementsByTagName('form').submit
+// })
 let formStepsNum = 0;
 let experienceNum = 1;
 
