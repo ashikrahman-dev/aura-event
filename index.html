@@ -21,6 +21,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="assets/css/splide.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
@@ -116,6 +118,146 @@
         </div>
     </section>
     <!-- Hero area -->
+
+    <!-- Event Slider section - start -->
+    <section class="event-slider-area">
+        <div class="container">
+            <div class="d-flex justify-content-between gap-4">
+                <!-- Section heading -->
+                <div class="section-heading">
+                    <h3 class="text-white">
+                        Die wunderschöne Welt unserer Events.
+                    </h3>
+                </div>
+                <!-- Section heading -->
+                <!-- Slider Arrow -->
+                <div class="splide-btns-wrap">
+                    <button class="splide_prev splide-btn">
+                        <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.46967 5.46967ZM1 6.75L25 6.75V5.25L1 5.25L1 6.75Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button class="splide_next splide-btn">
+                        <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403805 18.9896 0.403805 18.6967 0.696699C18.4038 0.989592 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM24 5.25L6.55671e-08 5.25L-6.55671e-08 6.75L24 6.75L24 5.25Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Slider Arrow -->
+            </div>
+        </div>
+        <!-- Slider wrapper -->
+        <div class="event-slider-wrap">
+            <div class="splide" id="eventSlider" role="group" aria-label="Splide Basic HTML Example">
+                <!-- <div class="splide__arrows">
+                </div> -->
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="event-slide-item">
+                                <div class="event-slide-img-wrap position-relative">
+                                    <div class="event-slide-img">
+                                        <img src="assets/img/event-slidei-img-1.jpg" alt="Event image"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <!-- Event Tag -->
+                                    <div class="event-tag position-absolute ">
+                                        Empfang & Foyer
+                                    </div>
+                                    <!-- Event Tag -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="event-slide-item">
+                                <div class="event-slide-img-wrap position-relative">
+                                    <div class="event-slide-img">
+                                        <img src="assets/img/event-slidei-img-2.jpg" alt="Event image"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <!-- Event Tag -->
+                                    <div class="event-tag position-absolute ">
+                                        Empfang & Foyer
+                                    </div>
+                                    <!-- Event Tag -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="event-slide-item">
+                                <div class="event-slide-img-wrap position-relative">
+                                    <div class="event-slide-img">
+                                        <img src="assets/img/event-slidei-img-3.jpg" alt="Event image"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <!-- Event Tag -->
+                                    <div class="event-tag position-absolute ">
+                                        Empfang & Foyer
+                                    </div>
+                                    <!-- Event Tag -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="event-slide-item">
+                                <div class="event-slide-img-wrap position-relative">
+                                    <div class="event-slide-img">
+                                        <img src="assets/img/event-slidei-img-1.jpg" alt="Event image"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <!-- Event Tag -->
+                                    <div class="event-tag position-absolute ">
+                                        Empfang & Foyer
+                                    </div>
+                                    <!-- Event Tag -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="event-slide-item">
+                                <div class="event-slide-img-wrap position-relative">
+                                    <div class="event-slide-img">
+                                        <img src="assets/img/event-slidei-img-2.jpg" alt="Event image"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <!-- Event Tag -->
+                                    <div class="event-tag position-absolute ">
+                                        Empfang & Foyer
+                                    </div>
+                                    <!-- Event Tag -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Slider progressbar -->
+                <div class="event-slider-progress">
+                    <div class="event-slider-progress-bar"></div>
+                </div>
+                <!-- Slider progressbar -->
+            </div>
+        </div>
+        <!-- Slider wrapper -->
+
+        <!-- Button -->
+        <div class="text-center mt-5 pt-2 ">
+            <a href="#" class="common-yellow-btn">
+                Jetzt Event-Raum Anfragen
+            </a>
+        </div>
+        <!-- Button -->
+    </section>
+    <!-- Slider section - end -->
 
     <!-- Occasions features -->
     <section class="occasions-feature-area">
@@ -379,14 +521,17 @@
                                 Textfeld Frage
                             </h5>
                             <p>
-                                Um direkt am Anfang des Formulars den Besucher zum Beispiel nach seinem Namen zu fragen verwende ein Textfeld. Neben Kontaktdaten kann es auch manchmal hilfreich sein Texteingaben innerhalb des Formulars zu erfassen.
+                                Um direkt am Anfang des Formulars den Besucher zum Beispiel nach seinem Namen zu fragen
+                                verwende ein Textfeld. Neben Kontaktdaten kann es auch manchmal hilfreich sein
+                                Texteingaben innerhalb des Formulars zu erfassen.
                             </p>
                         </div>
                         <!-- Form Header area -->
                         <div class="row g-3 address-field-frage">
                             <div class="col-md-12">
                                 <label for="inputQuestion4" class="form-label">question</label>
-                                <input type="text" class="form-control" id="inputQuestion4" placeholder="enter your question">
+                                <input type="text" class="form-control" id="inputQuestion4"
+                                    placeholder="enter your question">
                             </div>
                         </div>
                         <div class="btn-group">
@@ -417,7 +562,8 @@
                                         <img src="assets/img/form-last-step-select-icon-1.svg" alt="Icon"
                                             class="img-fluid">
                                     </span>
-                                    <span class="checkbox-label text-white fw-bold">Tolles Produkt! Ich möchte mehr erfahren!</span>
+                                    <span class="checkbox-label text-white fw-bold">Tolles Produkt! Ich möchte mehr
+                                        erfahren!</span>
                                 </span>
                             </label>
 
@@ -428,7 +574,8 @@
                                         <img src="assets/img/form-last-step-select-icon-2.svg" alt="Icon"
                                             class="img-fluid">
                                     </span>
-                                    <span class="checkbox-label text-white fw-bold">Ich möchte einen kostenfreien Präsentationstermin!</span>
+                                    <span class="checkbox-label text-white fw-bold">Ich möchte einen kostenfreien
+                                        Präsentationstermin!</span>
                                 </span>
                             </label>
                         </div>
@@ -544,6 +691,8 @@
     <!-- All Script file -->
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Splide JS -->
+    <script src="assets/js/splide.min.js"></script>
     <!-- Main Script file -->
     <script src="assets/js/script.js"></script>
 </body>

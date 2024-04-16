@@ -221,6 +221,90 @@ a {
 }
 
 /* ==== Hero Area ====*/
+/* ==== Event slider Area ====*/
+.event-slider-area {
+  padding: 120px 0;
+}
+.event-slider-area .section-heading {
+  margin-bottom: 70px;
+}
+.event-slider-area .section-heading h3 {
+  font-size: 36px;
+  line-height: 1.27;
+  font-weight: 300;
+}
+.event-slider-area .event-slider-wrap .splide__track {
+  margin-bottom: 80px;
+}
+.event-slider-area .event-slider-wrap .splide__slide .event-slide-item .event-slide-img-wrap {
+  z-index: -1;
+  display: inline-block;
+}
+.event-slider-area .event-slider-wrap .splide__slide .event-slide-item .event-slide-img-wrap .event-slide-img img {
+  width: 100%;
+}
+.event-slider-area .event-slider-wrap .splide__slide .event-slide-item .event-slide-img-wrap .event-tag {
+  background: var(--dark-1);
+  padding: 2px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  display: inline;
+  color: var(--white);
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+}
+.event-slider-area .event-slider-wrap .event-slider-progress {
+  margin-top: 80px;
+  max-width: 460px;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 2;
+}
+.event-slider-area .event-slider-wrap .event-slider-progress .event-slider-progress-bar {
+  background: #ffffff;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+.event-slider-area .splide-btns-wrap {
+  display: flex;
+  gap: 30px;
+}
+.event-slider-area .splide-btn {
+  background: transparent;
+  border: 1px solid var(--white);
+  width: 62px;
+  height: 62px;
+  border-radius: 0;
+  transition: all 150ms linear;
+}
+.event-slider-area .splide-btn svg * {
+  transition: all 150ms linear;
+}
+.event-slider-area .splide-btn:hover {
+  border-color: var(--primary);
+}
+.event-slider-area .splide-btn:hover svg * {
+  fill: var(--primary);
+}
+.event-slider-area .splide-btn.splide_prev {
+  top: -92px;
+  right: 390px;
+  left: auto;
+}
+.event-slider-area .splide-btn.splide_next {
+  top: -93px;
+  right: 300px;
+}
+
+/* ==== Event slider Area ====*/
 /* ==== Hero Area ====*/
 .occasions-feature-area {
   padding: 120px 0;
