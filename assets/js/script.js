@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 1890: {
                     perPage: 3,
                     focus: -0.08,
-                    
                 },
                 1690: {
                     perPage: 3,
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 880: {
                     perPage: 1,
                     padding: "180px",
-                    focus: -0.30,
+                    focus: -0.3,
                     gap: "20px",
                 },
                 768: {
@@ -60,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     focus: -0.09,
                     gap: "15px",
                 },
-            }
+            },
         });
 
         document
@@ -137,3 +136,32 @@ prevBtns.forEach((common_btn) => {
         console.log("kk");
     });
 });
+
+// Range Slider
+
+// let tooltip;
+// const slider = document.querySelector('[type="range"]');
+// rangeSlider.create(slider, {
+//     onSlide: (val) => {
+//         tooltip.textContent = val;
+//     },
+// });
+// const handleEl = slider.rangeSlider.handle;
+
+// tooltip = document.createElement("div");
+// tooltip.classList.add("tooltip");
+// handleEl.appendChild(tooltip);
+// tooltip.textContent = slider.rangeSlider.value;
+
+
+const changeValue = document.querySelector('.changeValue');
+const inputSlide = document.querySelector('.inputRange');
+// const changeValue = document.querySelector('.changeValue');
+
+let value = inputSlide.value;
+changeValue.innerHTML = value;
+
+inputSlide.oninput = ( () => {
+    let value = inputSlide.value;
+    changeValue.textContent = value;
+} )
