@@ -66,6 +66,16 @@
                     </div>
                     <!-- Button -->
                 </div>
+
+                <!-- Mobile menu btn -->
+                <button class="btn mobile-menu-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="13" width="32" height="2" fill="white" />
+                        <rect x="4" y="25" width="32" height="2" fill="white" />
+                    </svg>
+                </button>
+                <!-- Mobile menu btn -->
             </div>
         </nav>
     </header>
@@ -74,7 +84,6 @@
     <!-- Hero area -->
     <section class="hero-area">
         <div class="container">
-
             <div class="hero-area-content-wrap text-center">
                 <div class="hero-area-content">
                     <h1>
@@ -98,23 +107,26 @@
                 <!-- Double list -->
                 <div class="hero-check-list-wrap">
                     <div class="single-check-list">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="single-check-list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         +41 44 448 11 40 – Sprechen Sie mit unseren Event-Spezialisten.
                     </div>
                     <div class="single-check-list">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="single-check-list-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         +41 44 448 11 40 – Sprechen Sie mit unseren Event-Spezialisten.
                     </div>
                 </div>
                 <!-- Double list -->
             </div>
-
         </div>
     </section>
     <!-- Hero area -->
@@ -250,7 +262,7 @@
         <!-- Slider wrapper -->
 
         <!-- Button -->
-        <div class="text-center mt-5 pt-2 ">
+        <div class="text-center event-slider-btn">
             <a href="#" class="common-yellow-btn">
                 Jetzt Event-Raum Anfragen
             </a>
@@ -274,7 +286,7 @@
             </div>
             <!-- Section heading -->
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="occasions-feature-item text-center">
                         <div class="occasions-feature-icon">
                             <img src="assets/img/occasions-feature-icon-1.svg" alt="icon" class="img-fluid">
@@ -284,7 +296,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="occasions-feature-item text-center">
                         <div class="occasions-feature-icon">
                             <img src="assets/img/occasions-feature-icon-2.svg" alt="icon" class="img-fluid">
@@ -294,7 +306,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="occasions-feature-item text-center">
                         <div class="occasions-feature-icon">
                             <img src="assets/img/occasions-feature-icon-3.svg" alt="icon" class="img-fluid">
@@ -304,7 +316,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-6 col-lg-3">
                     <div class="occasions-feature-item text-center">
                         <div class="occasions-feature-icon">
                             <img src="assets/img/occasions-feature-icon-4.svg" alt="icon" class="img-fluid">
@@ -317,7 +329,7 @@
             </div>
 
             <!-- Button -->
-            <div class="text-center pt-5 mt-2 ">
+            <div class="text-center occasions-feature-btn">
                 <a href="#" class="common-yellow-btn">
                     Jetzt Event-Raum Anfragen
                 </a>
@@ -589,7 +601,7 @@
 
                     <!-- Progress Bar -->
                     <div class="progress-bar-wrapper">
-                        <div class="progress-bar mt-5 ">
+                        <div class="progress-bar">
                             <div class="progress" id="progress"></div>
                             <div class="progress-step active" data-title="Personal"></div>
                             <div class="progress-step" data-title="Contact "></div>
@@ -687,6 +699,77 @@
         </div>
     </footer>
     <!-- Footer area -->
+
+
+    <!-- Offcanvase menu -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <!-- Logo -->
+            <div class="">
+                <svg width="97" height="28" viewBox="0 0 97 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_591)">
+                        <path
+                            d="M39.6 5H32.9539V6.66154H38.4923C39.6 6.66154 41.5385 7.21538 41.5385 9.98462C41.5385 13.0862 39.3231 13.6769 38.2154 13.5846H34.8923V14.9692L41.5385 22.7231H44.0308L37.3846 15.2462C39.3231 15.4308 42.9528 14.7404 43.2 10.5385C43.4769 5.83077 40.8 5.09231 39.6 5Z"
+                            fill="white" />
+                        <path d="M2.21538 23H0L6.36923 5H8.03077L14.4 23H12.1846L7.2 8.32308L2.21538 23Z"
+                            fill="white" />
+                        <path d="M48.1846 23H45.9692L52.3385 5H54L60.3692 23H58.1539L53.1692 8.32308L48.1846 23Z"
+                            fill="white" />
+                        <path
+                            d="M18.2769 16.9077V5H16.6154V16.9077C16.5231 18.9385 17.6123 23 22.7077 23C27.8031 23 29.2615 19.1231 29.3538 17.1846V5H27.6923V16.9077C27.4154 18.3846 26.0307 21.3385 22.7077 21.3385C19.3846 21.3385 18.3692 18.3846 18.2769 16.9077Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_209_591">
+                            <rect width="96.4444" height="28" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <!-- Logo -->
+            <!-- Close Button -->
+            <button class="offcanvas-close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.9999 23.3172L6.68262 21.9999L13.6826 14.9999L6.68262 7.9999L7.9999 6.68262L14.9999 13.6826L21.9999 6.68262L23.3172 7.9999L16.3172 14.9999L23.3172 21.9999L21.9999 23.3172L14.9999 16.3172L7.9999 23.3172Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <!-- Close Button -->
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="offcanvas-mobile-menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Heim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beraten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Veranstaltungsgalerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Besondere Merkmale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Veranstaltungsangebote</a>
+                </li>
+            </ul>
+
+
+            <!-- Button -->
+            <div class="offcanvas-cta-btn text-center">
+                <button>
+                    Jetzt Event-Raum Anfragen
+                </button>
+            </div>
+            <!-- Button -->
+
+        </div>
+    </div>
+    <!-- Offcanvase menu -->
 
     <!-- All Script file -->
     <!-- Bootstrap -->

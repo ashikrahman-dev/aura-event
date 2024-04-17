@@ -11,7 +11,44 @@ document.addEventListener("DOMContentLoaded", function () {
             arrows: false,
             padding: "190px",
             trimSpace: false,
-            focus: 0.38,
+            focus: 0.25,
+            breakpoints: {
+                1890: {
+                    perPage: 3,
+                    focus: -0.08,
+                    
+                },
+                1690: {
+                    perPage: 3,
+                    padding: "10px",
+                    focus: 0.18,
+                    gap: "30px",
+                },
+                1390: {
+                    perPage: 2,
+                    padding: "180px",
+                    focus: 0.05,
+                    gap: "20px",
+                },
+                1180: {
+                    perPage: 2,
+                    padding: "80px",
+                    focus: 0.05,
+                    gap: "20px",
+                },
+                880: {
+                    perPage: 1,
+                    padding: "180px",
+                    focus: -0.30,
+                    gap: "20px",
+                },
+                768: {
+                    perPage: 1,
+                    padding: "90px",
+                    focus: -0.11,
+                    gap: "15px",
+                }
+            }
         });
 
         document
