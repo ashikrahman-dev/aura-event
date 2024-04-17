@@ -47,7 +47,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     padding: "90px",
                     focus: -0.11,
                     gap: "15px",
-                }
+                },
+                576: {
+                    perPage: 1,
+                    padding: "70px",
+                    focus: -0.13,
+                    gap: "15px",
+                },
+                370: {
+                    perPage: 1,
+                    padding: "40px",
+                    focus: -0.09,
+                    gap: "15px",
+                },
             }
         });
 
