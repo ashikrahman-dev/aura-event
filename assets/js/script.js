@@ -153,5 +153,6 @@ window.onload = function () {
     sliderPrice();
 };
 
-
 // New Range Slider
+
+

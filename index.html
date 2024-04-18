@@ -108,7 +108,8 @@
                 <div class="hero-check-list-wrap">
                     <div class="single-check-list">
                         <div class="single-check-list-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -117,7 +118,8 @@
                     </div>
                     <div class="single-check-list">
                         <div class="single-check-list-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.5 5.5L8.5 17.5L2.5 11.5" stroke="#FAFF00" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -376,8 +378,9 @@
                         <!-- Form Header area -->
                         <!-- Form first step checkbox -->
                         <div class="first-step-checkbox-wrapper">
-                            <label class="checkbox-wrapper">
+                            <label class="checkbox-wrapper" id="myNewText" onclick="toggleClass()">
                                 <input type="checkbox" class="checkbox-input" />
+
                                 <span class="checkbox-tile">
                                     <span class="checkbox-icon">
                                         <img src="assets/img/form-first-step-select-icon-1.svg" alt="Icon"
@@ -491,15 +494,23 @@
                     </div>
                     <!-- Form step - End -->
                     <!-- Form step - Start -->
-                    <div class="form-step py-5 my-5">
+                    <div class="form-step">
                         <div class="range-slider-wrap">
                             <div class="slider-container">
-                                <input type="range" min="0" max="5000" value="3000" step="1000" class="slider" id="myRange" oninput="sliderPrice()">
-                                <input type="number" id="sliderValue" min="0" max="5000"  value="3000" class="mt-5 ">
+                                <span class="fiexd-min-value">0 €</span>
+                                <input type="range" min="0" max="5000" value="3000" step="1000" class="slider"
+                                    id="myRange" oninput="sliderPrice()">
+                                <!-- Tooltip -->
+                                <span class="tooltip_value">5000 €</span>
+                                <!-- Tooltip -->
+                                <span class="fiexd-max-value">5000 €</span>
+                                <label for="sliderValue" class="slider-value-label">Alternativ eintippen:</label>
+                                <input type="number" id="sliderValue" min="0" max="5000" value="3000"
+                                    class="form-control">
                             </div>
                         </div>
 
-                        
+
                         <div class="btn-group">
                             <a class="common_btn btn-prev">Previous</a>
                             <a class="common_btn btn-next">Next</a>
