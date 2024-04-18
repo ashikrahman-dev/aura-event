@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     eventSlider.forEach(function (element) {
         const splide = new Splide(element, {
-            perPage: 3,
+            perPage: 2,
             perMove: 1,
             gap: "30px",
             pagination: false,
             arrows: false,
-            padding: "190px",
+            padding: "350px",
             trimSpace: false,
-            focus: 0.25,
+            focus: -0.19,
             breakpoints: {
                 1890: {
                     perPage: 3,
@@ -139,29 +139,19 @@ prevBtns.forEach((common_btn) => {
 
 // Range Slider
 
-// let tooltip;
-// const slider = document.querySelector('[type="range"]');
-// rangeSlider.create(slider, {
-//     onSlide: (val) => {
-//         tooltip.textContent = val;
-//     },
-// });
-// const handleEl = slider.rangeSlider.handle;
+// New Range Slider
+const slider = document.querySelector("#myRange");
+const output = document.querySelector("#sliderValue");
+const maxVal = parseInt(slider.max);
 
-// tooltip = document.createElement("div");
-// tooltip.classList.add("tooltip");
-// handleEl.appendChild(tooltip);
-// tooltip.textContent = slider.rangeSlider.value;
+function sliderPrice() {
+    let progress = (slider.value / maxVal) * 100;
+    slider.style.background = `linear-gradient(to right, #FAFF00 ${progress}%, rgba(153, 153, 153, 0.3) ${progress}%)`;
+}
+
+window.onload = function () {
+    sliderPrice();
+};
 
 
-const changeValue = document.querySelector('.changeValue');
-const inputSlide = document.querySelector('.inputRange');
-// const changeValue = document.querySelector('.changeValue');
-
-let value = inputSlide.value;
-changeValue.innerHTML = value;
-
-inputSlide.oninput = ( () => {
-    let value = inputSlide.value;
-    changeValue.textContent = value;
-} )
+// New Range Slider

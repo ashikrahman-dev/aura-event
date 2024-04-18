@@ -492,15 +492,10 @@
                     <!-- Form step - End -->
                     <!-- Form step - Start -->
                     <div class="form-step py-5 my-5">
-                        <div class="range">
-                            <div class="sliderValue">
-                                <span class="tooltipPointer"></span>
-                                <span class="changeValue"></span>
-                            </div>
-                            <div class="field">
-                                <div class="value left">0</div>
-                                <input onmousemove="rangeSlider(this.value)" type="range" class="inputRange" min="0" max="200" value="30" steps="1">
-                                <div class="value right">200</div>
+                        <div class="range-slider-wrap">
+                            <div class="slider-container">
+                                <input type="range" min="0" max="5000" value="3000" step="1000" class="slider" id="myRange" oninput="sliderPrice()">
+                                <input type="number" id="sliderValue" min="0" max="5000"  value="3000" class="mt-5 ">
                             </div>
                         </div>
 

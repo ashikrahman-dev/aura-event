@@ -1233,4 +1233,46 @@ textarea {
   background-color: var(--primary) !important;
 }
 
-/* ==== Multi Step Form Area ====*//*# sourceMappingURL=style.css.map */
+/* ==== Multi Step Form Area ====*/
+.slider-container {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 0px;
+  background: linear-gradient(to right, var(--primary), var(--primary));
+  outline: none;
+  opacity: 1;
+  padding: 0;
+  border: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../img/range-slider-tracker.svg");
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-top: -46px;
+}
+
+.slider::-webkit-slider-thumb::before {
+  content: attr(data-value);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: rgba(153, 153, 153, 0.3);
+  color: black;
+  border-radius: 5px;
+  opacity: 1;
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
